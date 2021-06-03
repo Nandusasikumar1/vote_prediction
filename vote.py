@@ -18,6 +18,6 @@ def app():
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     Total_electors=st.number_input('Enter the number of total eligible voters in your assembly constituency(Kerala only)',value=150000)
     if st.button('Predict'):
-        result1,result2,result3=predict(Total_electors)
-        st.success('Total votes are more likely to be any number close to these three numbers-{},{},{}'.format(result1,result2,result3))
+        result1,result21,result3=predict(Total_electors)
+        st.success('Total votes are more likely to be any number close to these three numbers-{},{},{}'.format(result1,result21,result3))
 app()
