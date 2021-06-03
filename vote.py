@@ -19,5 +19,5 @@ def app():
     Total_electors=st.number_input('Enter the number of total eligible voters in your assembly constituency(Kerala only)',value=150000)
     if st.button('Predict'):
         result1,result21,result3=predict(Total_electors)
-        st.success("Total votes can be any number close to these three numbers-{}   {}   {}".format(result1,result21,result3))
+        st.success("Total votes can be any number close to these three numbers-{} ,  {}  , {}".format(result1,result21,result3))
 app()
