@@ -1,1 +1,1 @@
-  web: sh setup.sh && streamlit run CoWIN_experiment.py
+  web: sh setup.sh && streamlit run vote.py
