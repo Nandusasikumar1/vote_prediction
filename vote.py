@@ -4,9 +4,9 @@ predictor1=pickle.load(open('model1.pickle','rb'))
 predictor2=pickle.load(open('model2.pickle','rb'))
 predictor3=pickle.load(open('model3.pickle','rb'))
 def predict(x):
-    n_votes1=str(predictor1.predict([[x]])).split('.')[0]
-    n_votes2=str(predictor2.predict([[x]])).split('.')[0]
-    n_votes3=str(predictor3.predict([[x]])).split('.')[0]
+    n_votes1=str(predictor1.predict([[x]])[0]).split('.')[0]
+    n_votes2=str(predictor2.predict([[x]])[0]).split('.')[0]
+    n_votes3=str(predictor3.predict([[x]])[0]).split('.')[0]
     return n_votes1,n_votes2,n_votes3
 def app():
     hide_streamlit_style = """
